@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DBLOJAJV</title>
+</head>
+<body>
+
+    <h1>Clientes</h1>
+    <div>
+        <input type="number" id="cliente-id" placeholder="ID (Editar/Excluir)">
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="NovoCliente()">Salvar Cliente</button>
+        <button onclick="DeletarCliente()">Excluir Cliente</button>
+    </div>
+    
+    <ul id="cliente-lista"></ul>
+
+    <hr>
+
+    <h1>Pedidos</h1>
+    <div>
+        <input type="number" id="pedido-id" placeholder="ID (Editar/Excluir)">
+        <input type="text" id="pedido-descricao" placeholder="Descrição">
+        <input type="text" id="pedido-preco" placeholder="Preço">
+        <input type="number" id="pedido-cliente-id" placeholder="ID do Cliente (id_c)">
+        <button onclick="SalvarPedido()">Salvar Pedido</button>
+        <button onclick="DeletarPedido()">Excluir Pedido</button>
+    </div>
+
+    <ul id="pedido-lista"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
